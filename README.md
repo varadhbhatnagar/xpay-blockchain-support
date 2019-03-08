@@ -30,7 +30,7 @@ While posting transactions to the blockchain, in the `.json` always
 
 <b>"newOwner" : "resource:org.xpay.Trader#DB" </b>
 
-Step 6: For closing the fabric instance, run `./stopFabric.sh`, followed by `./tearDownFabric.sh`.
+Step 6: For closing the fabric instance, run `./stopFabric.sh`, followed by `./tearDownFabric.sh` inside the fabric installation directory.
 
 ## Description of API Endpoints
 
