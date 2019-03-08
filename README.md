@@ -1,5 +1,5 @@
-# xpay-hyperledger
-
+# xpay-blockchain-support
+## Introduction
 A Blockchain application which aims to store and verify integrity of transactions done using <b>Xpay</b>.
 It is built using <b>Hyperledger Fabric and Composer</b>.
 
