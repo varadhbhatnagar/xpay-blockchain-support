@@ -1,0 +1,47 @@
+namespace org.xpay
+
+event TradeNotification {
+  o String test
+}
+asset Commodity identified by ID {
+    o String ID 
+    --> Trader owner
+}
+
+participant Trader identified by tradeId {
+    o String tradeId 
+}
+
+transaction Trade {
+  o String PaymentTokenID
+  o String MerchantID
+  o String Currency
+  o Double Amount
+  o String InvoiceID	optional
+  o String OriginalTransactionID
+  o String Description	optional
+  o Integer PaymentOption	optional
+  o String PaymentOptionDesc	optional
+  o String InitialURL	optional
+  o String AccountType	optional
+  o String AuthResult	optional
+  o String ExpiryTime	optional
+  o String IpAddress	optional
+  o String UserID		optional
+  o String TransactionResult	optional
+  o String AmountDeducted	optional
+  o String TransactionTime	optional
+  o String ErrorMessage		optional
+  o String CallBackResult	optional
+  o String CloseStatus	optional
+    --> Commodity commodity 
+    --> Trader newOwner
+}
+  
+  
+transaction  SetUp{
+}
+
+transaction Search{
+  o String PaymentTokenID
+}

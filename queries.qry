@@ -1,0 +1,6 @@
+
+query getResults {
+  description: "Return transaction data of a particular transactionID provided by user"
+  statement:
+      SELECT org.xpay.Trade WHERE (PaymentTokenID == _$param1)
+}
