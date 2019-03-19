@@ -39,3 +39,7 @@ Step 6: For closing the fabric instance, run `./stopFabric.sh`, followed by `./t
 <b>2. Trade</b> - Most important endpoint which is used to store transaction data to the blockchain. A '`POST` request must be sent to this end point, along with all the transaction data in `.json` format to save the data. `GET` request on this endpoint will retreive details of all the trades which have occured on the blockchain.
 
 <b>3. Query</b> - This is used to query the blockchain for a particular transaction. A `GET` request to this endpoint along with `PaymentTokenID` value as the parameter will retreive details of that particular transaction.
+
+## Data Persistence
+
+https://stackoverflow.com/questions/50420225/hyperledger-data-persistence-between-fabric-restarts
